@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="DebtorsDemoPersistancePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.innate.cresterp.entities.contacts.Contact</class>
+    <class>com.innate.cresterp.entities.contacts.Person</class>
+    <class>com.innate.cresterp.entities.contacts.Company</class>
+    <class>com.innate.cresterp.entities.contacts.Location</class>
+    <class>com.innate.cresterp.management.entities.GuestList</class>
+    <class>com.innate.cresterp.management.entities.FeedBack</class>
+    <class>com.innate.cresterp.management.entities.Attendant</class>
+    <class>com.innate.cresterp.management.entities.Event</class>
+    <class>com.innate.cresterp.management.entities.Rating</class>
+    <class>com.innate.cresterp.management.entities.EventMember</class>
+    <class>com.innate.cresterp.management.entities.AttendeetListing</class>
+    <class>com.innate.cresterp.management.entities.Question</class>
+    <class>com.innate.cresterp.management.entities.Program</class>
+    <class>com.innate.cresterp.management.entities.Questionnaire</class>
+    <class>com.innate.cresterp.management.entities.Attendee</class>
+    <class>com.innate.cresterp.management.entities.ProgramItem</class>
+    <class>com.innate.cresterp.communication.entities.Notification</class>
+    <class>com.innate.cresterp.communication.entities.Message</class>
+    <class>com.innate.cresterp.communication.entities.MessageConfiguration</class>
+    <class>com.innate.cresterp.insurance.risk.entities.SystemRole</class>
+    <class>com.innate.cresterp.insurance.risk.entities.SystemUserRole</class>
+    <class>com.innate.cresterp.insurance.risk.entities.ClaimConfiguration</class>
+    <class>com.innate.cresterp.insurance.risk.entities.PolicyCategory</class>
+    <class>com.innate.cresterp.insurance.risk.entities.Claim</class>
+    <class>com.innate.cresterp.insurance.risk.entities.Receipt</class>
+    <class>com.innate.cresterp.insurance.risk.entities.RiskPremium</class>
+    <class>com.innate.cresterp.insurance.risk.entities.Risk</class>
+    <class>com.innate.cresterp.insurance.risk.entities.PolicyType</class>
+    <class>com.innate.cresterp.insurance.risk.entities.SystemUser</class>
+    <class>com.innate.cresterp.insurance.risk.entities.Insurer</class>
+    <class>com.innate.cresterp.insurance.risk.entities.PolicyPeriod</class>
+    <class>com.innate.cresterp.insurance.risk.entities.Renewal</class>
+    <class>com.innate.cresterp.insurance.risk.entities.Audit</class>
+    <class>com.innate.cresterp.medical.hospital.entities.PatientRecord</class>
+    <class>com.innate.cresterp.medical.hospital.entities.CashSubmission</class>
+    <class>com.innate.cresterp.medical.hospital.entities.BiillingPoint</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Beed</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Tariff</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Deepartment</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Uusers</class>
+    <class>com.innate.cresterp.medical.hospital.entities.PaaymentsAdmission</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Biiills</class>
+    <class>com.innate.cresterp.medical.hospital.entities.MedicalAid</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Roooms</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Waard</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Invoices</class>
+    <class>com.innate.cresterp.medical.hospital.entities.Aadmissions</class>
+    <class>com.innate.cresterp.security.entities.UserModule</class>
+    <class>com.innate.cresterp.security.entities.AuditTrail</class>
+    <class>com.innate.cresterp.security.entities.Licence</class>
+    <class>com.innate.cresterp.security.entities.Company</class>
+  </persistence-unit>
+</persistence>

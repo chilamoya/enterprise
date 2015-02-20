@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="DebtorsDemoPersistancePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entities.PatientRecord</class>
+    <class>entities.Deepartment</class>
+    <class>entities.Waard</class>
+    <class>entities.Roooms</class>
+    <class>entities.Beed</class>
+    <class>entities.Aadmissions</class>
+    <class>entities.Uusers</class>
+    <class>entities.BiillingPoint</class>
+    <class>entities.Biiills</class>
+    <class>entities.CashSubmission</class>
+    <class>entities.PaaymentsAdmission</class>
+    <class>entities.Invoices</class>
+    <class>entities.MedicalAid</class>
+    <class>entities.Tariff</class>
+    <class>entities.risk.Risk</class>
+    <class>entities.risk.PolicyPeriod</class>
+    <class>entities.risk.PolicyType</class>
+    <class>entities.risk.RiskPremium</class>
+    <class>entities.risk.Renewal</class>
+    <class>entities.risk.PolicyCategory</class>
+    <class>entities.risk.Insurer</class>
+    <class>entities.risk.Receipt</class>
+    <class>entities.risk.SystemUser</class>
+    <class>entities.risk.SystemRole</class>
+    <class>entities.risk.SystemUserRole</class>
+    <class>entities.risk.ClaimConfiguration</class>
+    <class>entities.risk.Claim</class>
+    <class>entities.risk.Audit</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost6:3306/cchbilling"/>
+      <property name="javax.persistence.jdbc.password" value="mbada"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
