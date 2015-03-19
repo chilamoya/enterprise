@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.innate.cresterp.accounting.entities;
 
 import com.innate.cresterp.insurance.risk.entities.SystemUser;
@@ -21,25 +20,36 @@ import javax.persistence.Temporal;
 /**
  *
  * @author Tafadzwa
- * 
+ *
  */
 @Entity
 public class BookOfAccounts implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @ManyToOne
-    private AccountProcessTransaction transaction ;
-    private BigDecimal balance ;
+    private AccountProcessTransaction transaction;
+    private BigDecimal balance;
     @ManyToOne
-    private SystemUser user ;
-    private String description ;
+    private SystemUser user;
+    private String description;
     @Column(length = 1000)
-    private String rawData ;
+    private String rawData;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date createDate;
     private String erpModule;
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date transactionDate;
+
+    public Date getTransactionDate() {
+        return transactionDate;
+    }
+
+    public void setTransactionDate(Date transactionDate) {
+        this.transactionDate = transactionDate;
+    }
 
     public String getErpModule() {
         return erpModule;
@@ -48,7 +58,6 @@ public class BookOfAccounts implements Serializable {
     public void setErpModule(String erpModule) {
         this.erpModule = erpModule;
     }
-    
 
     public AccountProcessTransaction getTransaction() {
         return transaction;
@@ -97,9 +106,6 @@ public class BookOfAccounts implements Serializable {
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
-    
-    
-    
 
     public Long getId() {
         return id;
@@ -133,5 +139,5 @@ public class BookOfAccounts implements Serializable {
     public String toString() {
         return "com.innate.cresterp.accounting.entities.Ledger[ id=" + id + " ]";
     }
-    
+
 }
