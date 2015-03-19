@@ -42,11 +42,11 @@ public class Company implements Serializable {
     private String mobileNumber ;
 
     public String getCode() {
-        return Settings.decrypt(code);
+        return  code;
     }
 
     public void setCode(String code) {
-        this.code = Settings.encrypt(code);
+        this.code =  code ;
     }
     
    @Temporal(javax.persistence.TemporalType.DATE)

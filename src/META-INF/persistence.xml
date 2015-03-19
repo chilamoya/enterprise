@@ -55,5 +55,9 @@
     <class>com.innate.cresterp.security.entities.Company</class>
     <class>com.innate.cresterp.accounting.entities.TransactionsTank</class>
     <class>com.innate.cresterp.accounting.entities.BookOfAccounts</class>
+    <class>com.innate.cresterp.accounting.entities.Account</class>
+    <class>com.innate.cresterp.accounting.entities.AccountProcessTransaction</class>
+    <class>com.innate.cresterp.accounting.entities.AccountTransactionDefinition</class>
+    <class>com.innate.cresterp.accounting.entities.AccountingProcessDefinition</class>
   </persistence-unit>
 </persistence>
