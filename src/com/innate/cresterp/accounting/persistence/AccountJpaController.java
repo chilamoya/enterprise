@@ -25,7 +25,7 @@ import javax.persistence.criteria.Root;
 public class AccountJpaController implements Serializable {
 
     public AccountJpaController(EntityManagerFactory emf) {
-        this.emf = emf;
+          this.emf = new Configuration().generateEntityManagerFactory();
     }
     private EntityManagerFactory emf = null;
 

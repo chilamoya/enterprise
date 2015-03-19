@@ -8,6 +8,7 @@ package com.innate.cresterp.accounting.persistence;
 
 import com.innate.cresterp.accounting.entities.TransactionsTank;
 import com.innate.cresterp.accounting.persistence.exceptions.NonexistentEntityException;
+import com.innate.cresterp.insurance.risk.persistence.Configuration;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -24,7 +25,7 @@ import javax.persistence.criteria.Root;
 public class TransactionsTankJpaController implements Serializable {
 
     public TransactionsTankJpaController(EntityManagerFactory emf) {
-        this.emf = emf;
+         this.emf = new Configuration().generateEntityManagerFactory();
     }
     private EntityManagerFactory emf = null;
 

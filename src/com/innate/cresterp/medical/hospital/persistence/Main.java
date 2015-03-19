@@ -7,6 +7,8 @@ package com.innate.cresterp.medical.hospital.persistence;
 
 import com.innate.cresterp.accounting.entities.Account;
 import com.innate.cresterp.accounting.persistence.AccountJpaController;
+import com.innate.cresterp.security.entities.Company;
+import com.innate.cresterp.security.persistence.CompanyJpaController;
 import java.util.Date;
 
 /**
@@ -22,35 +24,8 @@ public class Main {
         // TODO code application logic here
         try {
             
-               /** SystemUser su = new  SystemUser();
-                su.setCellphoneNumber("263733863515");
-                su.setEmail("matengwane@gmail.com");
-                su.setFullName("Mmbada mugomo");
-                su.setPassword("matengwane");
-                su.setUserName("mbada");
-                
-                
-                
-                SystemUserJpaController suc = new SystemUserJpaController( );
-                
-                suc.create(su);*/
-            
-            Account acc = new Account();
-            acc.setName("Simba");
-            acc.setCode("1234");
-            acc.setDateCreated(new Date());
-            acc.setDiscription("kunakirwa baba");
-            acc.setBalance(9887.98);
-            
-            AccountJpaController ac = new AccountJpaController();
-            ac.create(acc);
-           /** AccountTransaction acct = new AccountTransaction();
-            acct.setNameOfTransactions("Mari");
-            acct.setDebitAccount(null);
-            acct.setCreditAccount(null);
-            acct.setDescription(null);
-            acct.setDateCreated(null);
-            acct.setAccountProcessTransaction(null);*/
+           Company company = new CompanyJpaController(null).findCompanyEntities().get(0);
+           System.out.println(company.getCode());
             
         }catch (Exception ex){
             ex.printStackTrace();
