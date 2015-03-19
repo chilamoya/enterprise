@@ -27,6 +27,7 @@ public class Company implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
+    
     @Column(length = 500)
     private String name ;
     
@@ -41,11 +42,11 @@ public class Company implements Serializable {
     private String mobileNumber ;
 
     public String getCode() {
-        return code;
+        return Settings.decrypt(code);
     }
 
     public void setCode(String code) {
-        this.code = code;
+        this.code = Settings.encrypt(code);
     }
     
    @Temporal(javax.persistence.TemporalType.DATE)

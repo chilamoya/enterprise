@@ -53,5 +53,7 @@
     <class>com.innate.cresterp.security.entities.AuditTrail</class>
     <class>com.innate.cresterp.security.entities.Licence</class>
     <class>com.innate.cresterp.security.entities.Company</class>
+    <class>com.innate.cresterp.accounting.entities.TransactionsTank</class>
+    <class>com.innate.cresterp.accounting.entities.BookOfAccounts</class>
   </persistence-unit>
 </persistence>
