@@ -40,12 +40,16 @@ public class Company implements Serializable {
     private String contactEmail ;
     
     private String mobileNumber ;
+    
+    
 
     public String getCode() {
-        return  code;
+         
+        return  code ;
     }
 
     public void setCode(String code) {
+       
         this.code =  code ;
     }
     
