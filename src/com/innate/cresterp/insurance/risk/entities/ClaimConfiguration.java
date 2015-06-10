@@ -26,6 +26,9 @@ public class ClaimConfiguration implements Serializable {
     private String configValue ;
     
     private String config;
+    
+    private boolean closeClaim;
+    
 
     public String getValue() {
         return configValue;
@@ -53,6 +56,16 @@ public class ClaimConfiguration implements Serializable {
         this.id = id;
     }
 
+    public boolean isCloseClaim() {
+        return closeClaim;
+    }
+
+    public void setCloseClaim(boolean closeClaim) {
+        this.closeClaim = closeClaim;
+    }
+
+    
+    
     @Override
     public int hashCode() {
         int hash = 0;
