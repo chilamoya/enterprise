@@ -8,11 +8,13 @@ package com.innate.cresterp.accounting.entities;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Temporal;
+import javax.persistence.UniqueConstraint;
 
 /**
  *
@@ -25,12 +27,23 @@ public class Account implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     String name;
+    @Column(unique = true)
     String code;
     @Temporal(javax.persistence.TemporalType.DATE)
     Date dateCreated;
     String description;
     Double balance;
-
+    String email ;
+    String mobile ;
+    String address ;
+    String sex ;
+    String contacts ;
+    @Column (length = 3000)
+    String wfield1;
+    @Column (length = 2000)
+    String wfield2;
+    String wfield3;
+    String wfield4;
     public String getName() {
         return name;
     }
