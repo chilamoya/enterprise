@@ -83,6 +83,78 @@ public class Account implements Serializable {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(String contacts) {
+        this.contacts = contacts;
+    }
+
+    public String getWfield1() {
+        return wfield1;
+    }
+
+    public void setWfield1(String wfield1) {
+        this.wfield1 = wfield1;
+    }
+
+    public String getWfield2() {
+        return wfield2;
+    }
+
+    public void setWfield2(String wfield2) {
+        this.wfield2 = wfield2;
+    }
+
+    public String getWfield3() {
+        return wfield3;
+    }
+
+    public void setWfield3(String wfield3) {
+        this.wfield3 = wfield3;
+    }
+
+    public String getWfield4() {
+        return wfield4;
+    }
+
+    public void setWfield4(String wfield4) {
+        this.wfield4 = wfield4;
+    }
     
     
 
