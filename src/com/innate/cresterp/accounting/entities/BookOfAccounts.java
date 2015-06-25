@@ -42,7 +42,20 @@ public class BookOfAccounts implements Serializable {
     private String erpModule;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date transactionDate;
+    @ManyToOne
+    private Account debitedAccount;
+    @ManyToOne
+    private Account creditedAccount;
+    private double currentBalance ;
 
+    public double getCurrentBalance() {
+        return currentBalance;
+    }
+
+    public void setCurrentBalance(double currentBalance) {
+        this.currentBalance = currentBalance;
+    }
+    
     public Date getTransactionDate() {
         return transactionDate;
     }
@@ -115,6 +128,24 @@ public class BookOfAccounts implements Serializable {
         this.id = id;
     }
 
+    public Account getDebitedAccount() {
+        return debitedAccount;
+    }
+
+    public void setDebitedAccount(Account debitedAccount) {
+        this.debitedAccount = debitedAccount;
+    }
+
+    public Account getCreditedAccount() {
+        return creditedAccount;
+    }
+
+    public void setCreditedAccount(Account creditedAccount) {
+        this.creditedAccount = creditedAccount;
+    }
+
+    
+    
     @Override
     public int hashCode() {
         int hash = 0;

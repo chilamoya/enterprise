@@ -84,7 +84,16 @@ public class AccountTransactionDefinition implements Serializable {
     public void setAccountProcessTransaction(AccountProcessTransaction accountProcessTransaction) {
         this.accountProcessTransaction = accountProcessTransaction;
     }
+
+    public String getNameOfTransactions() {
+        return nameOfTransactions;
+    }
+
+    public void setNameOfTransactions(String nameOfTransactions) {
+        this.nameOfTransactions = nameOfTransactions;
+    }
    
+    
 
     public Long getId() {
         return id;
@@ -119,8 +128,5 @@ public class AccountTransactionDefinition implements Serializable {
         return "com.innate.cresterp.accounting.entities.Transaction[ id=" + id + " ]";
     }
 
-    public void setNameOfTransactions(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+     
 }

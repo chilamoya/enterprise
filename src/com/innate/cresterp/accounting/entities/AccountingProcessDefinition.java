@@ -29,6 +29,31 @@ public class AccountingProcessDefinition implements Serializable {
     String description;
     @Temporal(javax.persistence.TemporalType.DATE)
     Date dateCreated;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(Date dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+    
     
     
     

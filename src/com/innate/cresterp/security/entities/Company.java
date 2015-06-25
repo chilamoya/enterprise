@@ -41,8 +41,36 @@ public class Company implements Serializable {
     
     private String mobileNumber ;
     
+    private String smsUsername ;
     
+    private String smsPassword ;
+    
+    private double smsBalance ;
 
+    public double getSmsBalance() {
+        return smsBalance;
+    }
+
+    public void setSmsBalance(double smsBalance) {
+        this.smsBalance = smsBalance;
+    }
+    
+    public String getSmsUsername() {
+        return smsUsername;
+    }
+
+    public void setSmsUsername(String smsUsername) {
+        this.smsUsername = smsUsername;
+    }
+
+    public String getSmsPassword() {
+        return smsPassword;
+    }
+
+    public void setSmsPassword(String smsPassword) {
+        this.smsPassword = smsPassword;
+    }
+    
     public String getCode() {
          
         return  code ;

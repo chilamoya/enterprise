@@ -59,5 +59,7 @@
     <class>com.innate.cresterp.accounting.entities.AccountProcessTransaction</class>
     <class>com.innate.cresterp.accounting.entities.AccountTransactionDefinition</class>
     <class>com.innate.cresterp.accounting.entities.AccountingProcessDefinition</class>
+    <class>com.innate.cresterp.communication.entities.SMSMessage</class>
+    <class>com.innate.cresterp.communication.entities.EmailMessage</class>
   </persistence-unit>
 </persistence>
